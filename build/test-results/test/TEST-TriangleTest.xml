@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TriangleTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2024-06-11T18:59:18" hostname="XPS8940" time="0.069">
+  <properties/>
+  <testcase name="verySmallTrianglesCanBeEquilateral()" classname="TriangleTest" time="0.048"/>
+  <testcase name="isoscelesTrianglesHaveLastTwoSidesEqual()" classname="TriangleTest" time="0.0"/>
+  <testcase name="trianglesWithOneUnequalSideAreNotEquilateral()" classname="TriangleTest" time="0.0"/>
+  <testcase name="scaleneTrianglesHaveNoEqualSides()" classname="TriangleTest" time="0.0"/>
+  <testcase name="trianglesWithNoEqualSidesAreNotEquilateral()" classname="TriangleTest" time="0.001"/>
+  <testcase name="isoscelesTrianglesHaveFirstAndLastSidesEqual()" classname="TriangleTest" time="0.0"/>
+  <testcase name="mayNotViolateTriangleInequality()" classname="TriangleTest" time="0.005"/>
+  <testcase name="firstTriangleInequalityViolation()" classname="TriangleTest" time="0.001"/>
+  <testcase name="twoSidesEqualAreNotScalene()" classname="TriangleTest" time="0.001"/>
+  <testcase name="firstAndThirdSidesAreEqualAreNotScalene()" classname="TriangleTest" time="0.0"/>
+  <testcase name="thirdTriangleInequalityViolation()" classname="TriangleTest" time="0.001"/>
+  <testcase name="secondAndThirdSidesAreEqualAreNotScalene()" classname="TriangleTest" time="0.0"/>
+  <testcase name="allSidesEqualAreNotScalene()" classname="TriangleTest" time="0.0"/>
+  <testcase name="equilateralTrianglesHaveEqualSides()" classname="TriangleTest" time="0.001"/>
+  <testcase name="trianglesWithNoSizeAreIllegal()" classname="TriangleTest" time="0.001"/>
+  <testcase name="isoscelesTrianglesHaveTwoFirstSidesEqual()" classname="TriangleTest" time="0.001"/>
+  <testcase name="equilateralTrianglesAreAlsoIsosceles()" classname="TriangleTest" time="0.001"/>
+  <testcase name="verySmallTrianglesCanBeIsosceles()" classname="TriangleTest" time="0.0"/>
+  <testcase name="noSidesAreEqualCantBeIsoceles()" classname="TriangleTest" time="0.0"/>
+  <testcase name="secondTriangleInequalityViolation()" classname="TriangleTest" time="0.001"/>
+  <testcase name="verySmallTrianglesCanBeScalene()" classname="TriangleTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
