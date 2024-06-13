@@ -1,34 +1,34 @@
 class Triangle {
 
-    private final double side1;
-    private final double side2;
-    private final double side3;
+    private final double sideOne;
+    private final double sideTwo;
+    private final double sideThree;
 
-    Triangle(double side1, double side2, double side3) throws TriangleException {
-        validate(side1, side2, side3);
+    Triangle(double sideOne, double sideTwo, double sideThree) throws TriangleException {
+        validate(sideOne, sideTwo, sideThree);
 
-        this.side1 = side1;
-        this.side2 = side2;
-        this.side3 = side3;
+        this.sideOne = sideOne;
+        this.sideTwo = sideTwo;
+        this.sideThree = sideThree;
     }
 
     boolean isEquilateral() {
-        return side1 == side2 && side1 == side3;
+        return sideOne == sideTwo && sideOne == sideThree;
     }
 
     boolean isIsosceles() {
-        return side1 == side2 || side1 == side3 || side2 == side3;
+        return !isScalene();
     }
 
     boolean isScalene() {
-        return side1 != side2 && side1 != side3 && side2 != side3;
+        return sideOne != sideTwo && sideOne != sideThree && sideTwo != sideThree;
     }
 
-    private static void validate(double side1, double side2, double side3) throws TriangleException {
-        if (
-                side1 == 0 || side2 == 0 || side3 == 0 ||
-                        side1 + side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1
-        )
-            throw new TriangleException();
+    private static void validate(double sideOne, double sideTwo, double sideThree) throws TriangleException {
+        var hasZeroSides = sideOne == 0 || sideTwo == 0 || sideThree == 0;
+        var oneSideBiggerThanSumOfOtherTwo =
+                sideOne + sideTwo < sideThree || sideOne + sideThree < sideTwo || sideTwo + sideThree < sideOne;
+
+        if (hasZeroSides || oneSideBiggerThanSumOfOtherTwo) throw new TriangleException();
     }
 }
